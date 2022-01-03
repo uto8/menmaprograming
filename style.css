@@ -248,6 +248,7 @@ section#contact .box .content a {
     background-repeat: no-repeat;
     background-size: cover;
     position: fixed;
+    background-attachment: scroll;
     z-index: 2;
   }
   section#section01 .description {
@@ -313,8 +314,9 @@ section#contact .box .content a {
     right: 0;
     bottom: 0;
     background-image: url(image/crowd.png);
-    background-attachment: fixed;
+    position: fixed;
     background-size: cover;
+    background-attachment: scroll;
     background-repeat: no-repeat;
   }
   section#section03 .description {
