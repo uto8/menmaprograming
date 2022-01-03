@@ -15,6 +15,7 @@ a:hover {
 
 section {
   padding: 120px 15px;
+  background: #fff;
 }
 section .box {
   margin: 0 auto;
@@ -54,7 +55,7 @@ section#main-visual a.contact {
 }
 
 section#section01 {
-  background-image: url(crowd.png);
+  background-image: url(image/crowd.png);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -117,7 +118,7 @@ section#section02 .box .content .item .description p {
 
 section#section03 {
   text-align: center;
-  background-image: url(crowd.png);
+  background-image: url(image/crowd.png);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -208,6 +209,8 @@ section#contact .box .content a {
   }
 
   section#main-visual {
+    position: relative;
+    z-index: 3;
     text-align: center;
   }
   section#main-visual h1 {
@@ -241,10 +244,10 @@ section#contact .box .content a {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url(crowd.png);
+    background-image: url(image/crowd.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    position: fixed;
     z-index: 2;
   }
   section#section01 .description {
@@ -260,6 +263,10 @@ section#contact .box .content a {
     font-size: 18px;
   }
 
+  section#section02 {
+    position: relative;
+    z-index: 3;
+  }
   section#section02 .box {
     display: block;
   }
@@ -305,7 +312,7 @@ section#contact .box .content a {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url(crowd.png);
+    background-image: url(image/crowd.png);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -322,6 +329,10 @@ section#contact .box .content a {
     line-height: 2;
   }
 
+  section#section05 {
+    position: relative;
+    z-index: 3;
+  }
   section#section05 .box .content {
     display: block;
   }
@@ -332,6 +343,8 @@ section#contact .box .content a {
     width: 100%;
   }
   section#contact {
+    position: relative;
+    z-index: 3;
     padding-top: 0;
   }
   section#contact .box {
