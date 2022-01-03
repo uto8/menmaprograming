@@ -1,0 +1,355 @@
+html, body {
+  margin: 0;
+  font-family: "Sawarabi Mincho", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+section {
+  padding: 120px 15px;
+}
+section .box {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+section#main-visual {
+  background-color: #161618;
+  text-align: center;
+  color: #fff;
+}
+section#main-visual h1 {
+  font-size: 35px;
+  color: #fff;
+}
+section#main-visual h1 strong {
+  color: #E21A41;
+  font-size: 43px;
+}
+section#main-visual p {
+  margin-bottom: 60px;
+  color: #fff;
+  font-size: 22px;
+}
+section#main-visual a {
+  color: #E21A41;
+  display: block;
+  margin-bottom: 20px;
+}
+section#main-visual a.contact {
+  background: #E21A41;
+  padding: 10px 60px;
+  font-size: 25px;
+  display: inline-block;
+  font-weight: bold;
+  color: #fff;
+}
+
+section#section01 {
+  background-image: url(image/crowd.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+section#section01::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  opacity: 0.7;
+}
+section#section01 .description {
+  position: relative;
+  z-index: 2;
+}
+section#section01 .description h2 {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+section#section01 .description p {
+  line-height: 2;
+  font-size: 18px;
+}
+
+section#section02 .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+section#section02 .box h2 {
+  margin: 0;
+  width: 30%;
+}
+section#section02 .box .content {
+  width: 70%;
+}
+section#section02 .box .content .item {
+  margin-bottom: 40px;
+  width: 50%;
+  margin: 0 auto 40px;
+}
+section#section02 .box .content .item .image img {
+  width: 100%;
+}
+section#section02 .box .content .item .description h5 {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+section#section02 .box .content .item .description p {
+  font-size: 15px;
+  margin-top: 0;
+}
+
+section#section03 {
+  text-align: center;
+  background-image: url(image/crowd.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+section#section03::before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  opacity: 0.7;
+}
+section#section03 .description {
+  z-index: 2;
+  position: relative;
+}
+section#section03 .description h2 {
+  font-size: 32px;
+}
+section#section03 .description p {
+  font-size: 20px;
+  line-height: 2;
+}
+
+section#section05 .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+section#section05 .content .item {
+  width: 30%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+section#section05 .content .item img {
+  width: 100%;
+}
+section#contact .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+section#contact .box h2 {
+  margin: 0;
+  width: 30%;
+}
+section#contact .box .content {
+  width: 70%;
+}
+section#contact .box .content p {
+  margin-bottom: 20px;
+}
+section#contact .box .content a {
+  background: black;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+@media (min-width: 600px) {
+  .pc {
+    display: block;
+  }
+
+  .mb {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .mb {
+    display: block;
+  }
+
+  .pc {
+    display: none;
+  }
+
+  section#main-visual {
+    text-align: center;
+  }
+  section#main-visual h1 {
+    font-size: 22px;
+    color: #fff;
+  }
+  section#main-visual h1 strong {
+    color: #E21A41;
+    font-size: 24px;
+  }
+  section#main-visual p {
+    margin-bottom: 60px;
+    color: #fff;
+    font-size: 18px;
+  }
+  section#main-visual a.contact {
+    padding: 10px 20px;
+    font-size: 16px;
+    display: inline-block;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  section#section01::before {
+    z-index: 3;
+  }
+  section#section01::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(image/crowd.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 2;
+  }
+  section#section01 .description {
+    position: relative;
+    z-index: 5;
+  }
+  section#section01 .description h2 {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+  section#section01 .description p {
+    line-height: 2;
+    font-size: 18px;
+  }
+
+  section#section02 .box {
+    display: block;
+  }
+  section#section02 .box h2 {
+    margin: 0 0 30px;
+    width: 100%;
+  }
+  section#section02 .box .content {
+    width: 100%;
+  }
+  section#section02 .box .content .item {
+    width: 100%;
+  }
+  section#section02 .box .content .item .description h5 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  section#section02 .box .content .item .description p {
+    font-size: 15px;
+    margin-top: 0;
+  }
+
+  section#section03 {
+    background-image: none;
+  }
+  section#section03::before {
+    content: "";
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    opacity: 0.7;
+  }
+  section#section03::after {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(image/crowd.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  section#section03 .description {
+    z-index: 3;
+    position: relative;
+  }
+  section#section03 .description h2 {
+    font-size: 24px;
+  }
+  section#section03 .description p {
+    font-size: 16px;
+    line-height: 2;
+  }
+
+  section#section05 .box .content {
+    display: block;
+  }
+  section#section05 .box .content .item {
+    width: 80%;
+  }
+  section#section05 .box .content .item img {
+    width: 100%;
+  }
+  section#contact {
+    padding-top: 0;
+  }
+  section#contact .box {
+    display: block;
+  }
+  section#contact .box h2 {
+    margin: 0;
+    width: 100%;
+  }
+  section#contact .box .content {
+    width: 100%;
+  }
+  section#contact .box .content p {
+    margin-bottom: 20px;
+  }
+  section#contact .box .content a {
+    background: black;
+    padding: 10px 20px;
+    color: #fff;
+  }
+}
